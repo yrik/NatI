@@ -1,0 +1,6 @@
+wikipedia
+pygoogle
+nltk
+sympy
+ipython
+numpy

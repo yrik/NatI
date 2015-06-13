@@ -1,7 +1,7 @@
 
 import sys
 
-import alsaaudio, wave
+import wave
 
 import numpy as np
 
