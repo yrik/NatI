@@ -25,10 +25,15 @@ import random
 import time
 import uuid
 
+
+'''
 if sys.version_info.major == 3:
     import urllib.request as urllib
 else:
     import urllib2 as urllib
+'''
+
+import urllib2 as urllib
 
 import grooveshark.const
 from grooveshark.classes import *

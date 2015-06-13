@@ -15,7 +15,9 @@ player.init()
 import subprocess
 from grooveshark import Client
 songClient = Client()
+'''
 songClient.init()
+'''
 
 from sets import Set
 
@@ -28,7 +30,9 @@ def matchWord(tokens, words):
 		import operator
 		result = []
 		for token in Set(tokens):
-			vals = {w : (1.0-float(distance.edit_distance(token, w))/float(max(len(token),len(w)))) for w in words}
+			vals = {}
+			for w in words:
+				vals[w] = (1.0-float(distance.edit_distance(token, w))/float(max(len(token),len(w))))
 			sortedvals = sorted(vals.iteritems(), key=operator.itemgetter(1),reverse=True)
 			result.append( (token, sortedvals[0][1], sortedvals[0][0]) )
 		return sorted(result, key=lambda tup: tup[1], reverse=True)

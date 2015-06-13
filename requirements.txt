@@ -2,5 +2,7 @@ wikipedia
 pygoogle
 nltk
 sympy
-ipython
 numpy
+pyalsaaudio
+https://github.com/ipython/ipython/archive/rel-1.0.0.zip
+
